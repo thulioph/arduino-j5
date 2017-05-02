@@ -1,5 +1,5 @@
 {
-  "name": "arduino-socket",
+  "name": "arduino-j5",
   "version": "1.0.0",
   "description": "Example of iot project using nodejs and arduino",
   "main": "main.js",

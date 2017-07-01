@@ -1,13 +1,13 @@
 # Arduino J5
 
-Application using Arduino + Johnny Five + Nodejs + Socket.io to make my knowledge funnier!
+> Application using Arduino + Johnny Five + Nodejs + Socket.io to make my knowledge funnier!
 
 ## First steps
 
-- Install Arduino
-- Install Nodejs
-- Install Johnny-Five
-- Setup your board
+- [Install Arduino](https://www.arduino.cc/en/Main/Software)
+- [Install Nodejs](https://nodejs.org/en/download/)
+- [Install Johnny-Five](https://www.npmjs.com/package/johnny-five)
+- [Setup your board](http://johnny-five.io/platform-support/)
 
 ## How to use
 

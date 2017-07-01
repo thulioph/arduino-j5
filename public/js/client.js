@@ -80,4 +80,16 @@
     turnOff.classList.toggle('is-outlined');
   });
 
+  // proximity
+  socket.on('proximity', (obj) => {
+    if (Math.floor(obj.cm) < 5) {
+      console.warn(`Você está bem perto, ${obj.cm}cm`);
+    } else if (Math.floor(obj.cm) > 15) {
+      console.warn(`Você está afastado, ${obj.cm}cm`);
+    } else if (Math.floor(obj.cm) > 20) {
+      console.warn(`Você está longe, ${obj.cm}cm`);
+    }
+
+    document.querySelector('#proximity').innerHTML = `${obj.cm/100} m`;
+  });
 })();

@@ -11,6 +11,11 @@
       board.on('ready', () => {
         socket.emit('board_ready', true);
 
+        // proximity
+        const proximity = new j5.Proximity({
+          controller: "HCSR04",
+          pin: 7,
+        });
 
         let button = new j5.Button({
           pin: 2
@@ -23,6 +28,9 @@
         });
 
         // ====
+
+        proximity.on('data', (e) => socket.emit('proximity', e));
+        proximity.on('change', (e) => socket.emit('proximity_change', e));
 
         socket.on('down', () => led.on());
         socket.on('up', () => led.stop().off());

@@ -1,23 +1,37 @@
 # Arduino J5
 
+Application using Arduino + Johnny Five + Nodejs + Socket.io to make my knowledge funnier!
+
+## First steps
+
+- Install Arduino
+- Install Nodejs
+- Install Johnny-Five
+- Setup your board
+
 ## How to use
 
-Install dependencies:
+Install the dependencies:
 
 ```bash
 $ npm install
 ```
 
-Starting the local server:
+Starting the local:
 
 ```bash
 $ npm start
 ```
 
+Plugging your board!
+
 ## Preview
 [https://twitter.com/i/videos/tweet/859229441112887298](https://twitter.com/i/videos/tweet/859229441112887298)
 
+## Schemas
 
-## License
+### Proximity
+![Proximity Schema](schemas/schema-proximity.png)
 
-[MIT License](https://thulioph.mit-license.org) © Thulio Philipe
+### Led and Button
+![Led and Button Schema](schemas/schema-led-button.png)

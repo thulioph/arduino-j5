@@ -1,6 +1,6 @@
 {
   "name": "arduino-j5",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Example of iot project using nodejs and arduino",
   "main": "main.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/thulioph/arduino-j5.git"
   },
   "author": "thulioph",
   "license": "MIT",

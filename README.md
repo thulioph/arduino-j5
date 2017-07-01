@@ -27,8 +27,8 @@ Plugging your board!
 
 ## Schemas
 
-### Proximity
-![Proximity Schema](schemas/schema-proximity.png)
+### Led Proximity
+![Led Proximity Schema](schemas/schema-led-proximity.png)
 
 ### Led and Button
 ![Led and Button Schema](schemas/schema-led-button.png)

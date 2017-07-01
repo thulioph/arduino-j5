@@ -29,8 +29,17 @@
 
         // ====
 
-        proximity.on('data', (e) => socket.emit('proximity', e));
-        proximity.on('change', (e) => socket.emit('proximity_change', e));
+        proximity.on('data', (e) => {
+          socket.emit('proximity', e);
+
+          if (Math.floor(e.cm) < 5) {
+            led.on();
+          } else if (Math.floor(e.cm) > 15) {
+            led.blink(200);
+          } else if (Math.floor(e.cm) > 20 && Math.floor(e.cm).toString().length <= 3) {
+            led.off();
+          }
+        });
 
         socket.on('down', () => led.on());
         socket.on('up', () => led.stop().off());

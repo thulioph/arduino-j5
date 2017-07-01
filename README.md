@@ -25,9 +25,6 @@ $ npm start
 
 Plugging your board!
 
-## Preview
-[https://twitter.com/i/videos/tweet/859229441112887298](https://twitter.com/i/videos/tweet/859229441112887298)
-
 ## Schemas
 
 ### Proximity
